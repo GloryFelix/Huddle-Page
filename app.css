@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-desktop.svg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center; 
+    padding: 3em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header img {
+    width: 15%;;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main img {
+    width: 46%;
+    padding-top: 3em;
+}
+
+.content {
+    margin: 5em auto;
+    width: 35%;
+    color: white;
+}
+
+.content h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 34px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 2em 0em;
+}
+
+button {
+    width: 40%;
+    padding: 1em;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    color: hsl(300, 69%, 71%);
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer {
+    float: right;
+}
+
+footer .fab {
+    color: white;
+    padding: 7px;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+footer .fab:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+/* for smaller screens */
+@media screen and (max-width: 992px) {
+    header img {
+        width: 36%;
+    }
+    main {
+        display: block;
+    }
+    main img {
+        padding-top: 2em;
+        text-align: center;
+        width: 100%
+    }
+    .content {
+        text-align: center;
+        width: 100%;
+    }
+    .content h2 {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    
+}
+ /* for mobile screens */
+
+ @media screen and (max-width: 600px){
+     body {
+         padding: 1em;
+         background-image: url("./images/bg-mobile.svg");
+     }
+     header img {
+         width: 50%;
+     }
+     .content h2 {
+         font-size: 26px;
+         line-height: 30px;
+     }
+     .content p {
+         font-size: 13px;
+         padding: 0.5em 0;
+     }
+     button {
+         width: 80%;
+     }
+     footer {
+         float: none;
+     } 
+     footer {
+         float: none;
+         text-align: center;
+     }
+     
+ }
